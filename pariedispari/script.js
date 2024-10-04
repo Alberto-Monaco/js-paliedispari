@@ -5,14 +5,15 @@
 const user_number = Number(prompt('scegli un numero tra 1 e 5'))
 alert(`hai scelto il numero ${user_number}`)
 
-function pc_number() {
-	const number = Math.round(Math.random() * 4) + 1
+function pc_number(num) {
+	const number = Math.floor(Math.random() * num) + 1
 	return number
 }
 
-const number_computer = pc_number()
+const number_computer = pc_number(5)
 alert(`il computer ha scelto il numero ${number_computer}`)
 const somma = user_number + number_computer
+
 function pair() {
 	return somma % 2 === 0
 }
