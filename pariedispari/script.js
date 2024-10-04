@@ -12,15 +12,15 @@ function pc_number() {
 
 const number_computer = pc_number()
 alert(`il computer ha scelto il numero ${number_computer}`)
+const somma = user_number + number_computer
 function pair() {
-	let somma = user_number + number_computer
 	return somma % 2 === 0
 }
 
 const result = pair()
 
 if (result) {
-	alert('la somma dei due numeri è pari')
+	alert(`la somma dei due numeri ${somma} è pari`)
 } else {
-	alert('la somma dei due numeri è dispari')
+	alert(`la somma dei due numeri ${somma} è dispari`)
 }
