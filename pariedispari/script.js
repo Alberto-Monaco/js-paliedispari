@@ -14,11 +14,11 @@ const number_computer = pc_number(5)
 alert(`il computer ha scelto il numero ${number_computer}`)
 const somma = user_number + number_computer
 
-function pair() {
-	return somma % 2 === 0
+function pair(num) {
+	return num % 2 === 0
 }
 
-const result = pair()
+const result = pair(somma)
 
 if (result) {
 	alert(`la somma dei due numeri ${somma} è pari`)
