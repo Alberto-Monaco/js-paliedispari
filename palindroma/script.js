@@ -2,13 +2,10 @@
 // Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
 const word = prompt('dammi una parola')
-const word_divise = word.split('')
-console.log(word_divise)
-const word_reverse = word_divise.slice().reverse()
-console.log(word_reverse)
-console.log(word_divise)
 
-function palindroma() {
+function palindroma(word) {
+	let word_divise = word.split('')
+	let word_reverse = word_divise.slice().reverse()
 	let pali = false
 	for (let i = 0; i < word_divise.length; i++) {
 		if (word_divise[i] !== word_reverse[i]) {
@@ -20,7 +17,7 @@ function palindroma() {
 	}
 	return pali
 }
-const pali = palindroma()
+const pali = palindroma(word)
 
 if (pali) {
 	alert('la parola è palindroma')
